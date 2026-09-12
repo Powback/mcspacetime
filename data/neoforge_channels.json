@@ -1,0 +1,3466 @@
+{
+  "configuration": {
+    "bettercombat:ack": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "bettercombat:config_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "bettercombat:weapon_registry": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "neoforge:extensible_enum_ack": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": true
+    },
+    "neoforge:extensible_enum_data": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "neoforge:feature_flags": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "neoforge:feature_flags_ack": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": true
+    },
+    "neoforge:frozen_registry": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "neoforge:frozen_registry_sync_completed": {
+      "version": "1",
+      "flow": null,
+      "optional": true
+    },
+    "neoforge:frozen_registry_sync_start": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "neoforge:known_registry_data_maps": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "neoforge:known_registry_data_maps_reply": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": true
+    },
+    "owo:handshake": {
+      "version": "1.0.0",
+      "flow": null,
+      "optional": false
+    },
+    "owo:handshake_off": {
+      "version": "1.0.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "rechiseled:main": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "ritchiesprojectilelib:neo_forge_packet": {
+      "version": "3.0.0",
+      "flow": null,
+      "optional": false
+    },
+    "trashcans:main": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    }
+  },
+  "play": {
+    "accessories:main": {
+      "version": "1.0.0",
+      "flow": null,
+      "optional": true
+    },
+    "advancedperipherals:retrieveusername": {
+      "version": "0.7.62b",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "advancedperipherals:toasttoclient": {
+      "version": "0.7.62b",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "advancedperipherals:usernametocache": {
+      "version": "0.7.62b",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:assembler_animation": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:block_transition_effect": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:clear_pattern_access_terminal": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:color_applicator_select_color": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:compass_request": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:compass_response": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:config_button": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:config_value": {
+      "version": "ae2",
+      "flow": null,
+      "optional": false
+    },
+    "ae2:confirm_auto_craft": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:craft_confirm_plan": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:crafting_job_status": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:crafting_status": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:exported_grid_content": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:fill_crafting_grid_from_recipe": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:gui_action": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:hotkey": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:inventory_action": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:item_transition_effect": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:lightning": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:matter_cannon": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:me_interaction": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:me_inventory_update": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:mock_explosion": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:mouse_wheel": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:network_status": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:part_left_click": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:pattern_access_terminal": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:quick_move_pattern": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:select_key_type": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:set_link_status": {
+      "version": "ae2",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ae2:swap_slots": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:switch_guis": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ae2:toggle_ctrl_down": {
+      "version": "ae2",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeronautics:levitite_blend_crystallize": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeronautics_utility_objects:set_damping_resistance": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeronautics_utility_objects:set_hydraulic_settings": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeronautics_utility_objects:set_joint_speed_ratio": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeronautics_utility_objects:sync_hydraulic_selection": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "aeroworks:console_channel": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:exit_console_control": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_clear_frequencies": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_item_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_item_name": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_analog_source": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_bind": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_channel_flag": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_channel_number": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_channel_travel": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_frequency": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_name": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:module_set_orientation": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:open_held_module_menu": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:open_module_menu": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "aeroworks:servo_update_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "atmosphere:render_local_weather": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "automobility:message_packet": {
+      "version": "0.5",
+      "flow": null,
+      "optional": false
+    },
+    "azurelibarmor:az_item_stack_dispatch_command_sync": {
+      "version": "azurelibarmor",
+      "flow": null,
+      "optional": false
+    },
+    "bettercombat:attack_animation": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "bettercombat:attack_sound": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "bettercombat:block_hit": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "bettercombat:c2s_request_attack": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "climbable_ropes:climb_anim_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "climbable_ropes:climb_anim_update": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "comforts:auto_sleep": {
+      "version": "comforts",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "comforts:place_bag": {
+      "version": "comforts",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:chat_table": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:computer_action": {
+      "version": "1.119.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "computercraft:computer_terminal": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:key_event": {
+      "version": "1.119.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "computercraft:monitor_client": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:mouse_event": {
+      "version": "1.119.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "computercraft:paste_event": {
+      "version": "1.119.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "computercraft:play_record": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:pocket_computer_data": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:pocket_computer_deleted": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:speaker_audio": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:speaker_move": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:speaker_play": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:speaker_stop": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "computercraft:upload_file": {
+      "version": "1.119.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "computercraft:upload_result": {
+      "version": "1.119.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "corpse:open_additional_items": {
+      "version": "0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "corpse:open_history": {
+      "version": "0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "corpse:request_death_history": {
+      "version": "0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "corpse:show_corpse_inventory": {
+      "version": "0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "corpse:spawn_death_particles": {
+      "version": "0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "corpse:switch_inventory_page": {
+      "version": "0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "corpse:transfer_items": {
+      "version": "0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:add_train": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:attached_computer": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:beam_effect": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:block_highlight": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:blueprint_complete_recipe": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:c_configure_train": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:c_train_honk": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:c_train_hud": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:chain_conveyor_connect": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:chain_conveyor_riding": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:chain_package_interaction": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:clear_container": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:client_motion": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:clientbound_chain_conveyor": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:clipboard_edit": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_data_gatherer": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_elevator_contact": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_factory_panel": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_filter": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_redstone_requester": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_schedule": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_schematicannon": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_sequencer": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_station": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_stock_keeper_categories": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_stockswitch": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_symmetry_wand": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:configure_worldshaper": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:connect_factory_panel": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:contraption_actor_toggle": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:contraption_block_changed": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:contraption_collider_lock": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:contraption_collider_lock_request": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:contraption_disassemble": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:contraption_interact": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:contraption_relocation": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:contraption_seat_mapping": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:contraption_stall": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:controls_abort": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:controls_input": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:destroy_curved_track": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:ejector_award": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:ejector_elytra": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:electro_zapper_shoot": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:elevator_set_floor": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:extendo_interact": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:factory_panel_effect": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:fluid_splash": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:funnel_flap": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:gantry_update": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:glue_effect": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:glue_in_area": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:glue_removed": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:instant_schematic": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:knockback": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:left_click": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:limbswing_update": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:linked_controller_bind": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:linked_controller_input": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:linked_controller_use_lectern": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:lock_stock_keeper": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:logistics_package_request": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:logistics_stock_request": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:logistics_stock_response": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:minecart_controller": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:minecart_coupling_creation": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:mounted_storage_sync": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:observer_stressometer": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:package_destroyed": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:package_port_configuration": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:packager_link_effect": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:persistent_data": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:place_arm": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:place_curved_track": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:place_ejector": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:place_package_port": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:place_schematic": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:potato_cannon": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:radial_wrench_menu_submit": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:redstone_requester_effect": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:refund_stock_keeper_category": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:relocate_train": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:remove_te": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:remove_train": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:request_floor_list": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:s_configure_train": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:s_place_arm": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:s_place_ejector": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:s_place_package_port": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:s_train_honk": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:s_train_hud": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:s_train_prompt": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:select_curved_track": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:server_debug_info": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:server_speed": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:shop_update": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:soul_pulse": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:stock_keeper_hide_category": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:submit_ghost_item": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:symmetry_effect": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:sync_edge_group": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:sync_rail_graph": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:sync_schematic": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:toolbox_dispose_all": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:toolbox_equip": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:track_graph_request": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:track_graph_roll_call": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:train_collision": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:train_map_request": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:train_map_sync": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:trigger_ejector": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:tunnel_flap": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:update_elevator_floors": {
+      "version": "6.0.10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create:upload_schematic": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create:value_settings": {
+      "version": "6.0.10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:airship_schedule_menu_action": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:airship_station_menu_action": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:cancel_transponder_route_recording": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:finish_transponder_route_recording": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:open_schedule_editor": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:preview_station_routes": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:reopen_ship_transponder": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:select_airship_schedule_station": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_automated_ship_visual_state": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_cargo_link_prompt": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_dock_link_prompt": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_flight_path_preview": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_menu_action_bar_message": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_transponder_append_mode": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:set_transponder_recording_state": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:ship_transponder_menu_action": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:show_docking_issue_toast": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:show_ship_transponder_highlight": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:start_transponder_route_recording": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_automated_ship_visuals": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_identity_directory": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_logistics_terminal_preview_markers": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_logistics_terminal_preview_routes": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_logistics_terminal_routes": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_ship_map_markers": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_station_menu_state": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_station_route_choices": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_transponder_menu_state": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_transponder_owned_schedule": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:sync_visible_logistics_terminal_previews": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:update_airship_schedule": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:update_airship_schedule_title": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_automated_logistics:update_identity_name": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_throwable_rope_connector:mounted_rope_launcher_dismount": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_throwable_rope_connector:mounted_rope_launcher_fire": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_throwable_rope_connector:mounted_rope_launcher_release": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_aeronautics_throwable_rope_connector:rope_connector_launcher_shoot": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_jetpack:sync_config": {
+      "version": "2.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_optical:configure_hologram": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_optical:configure_optical_source": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_radar:bool_list": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_radar:fire": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_radar:id_record": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_radar:id_record_request": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_radar:id_record_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_radar:monitor_selection": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_radar:raycast": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_radar:save_lists": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_submarine:bounds_sync": {
+      "version": "create_submarine",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_submarine:camera_shake": {
+      "version": "create_submarine",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_submarine:electrolyzer_toggle": {
+      "version": "create_submarine",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_submarine:hull_config_edit": {
+      "version": "create_submarine",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "create_submarine:hull_config_sync": {
+      "version": "create_submarine",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "create_submarine:sub_crack": {
+      "version": "create_submarine",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createaddition:energy_network_packet": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "createaddition:observer_packet": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "createaddition:time_remaining_packet": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "createbigcannons:neoforge_packet": {
+      "version": "3.0.0",
+      "flow": null,
+      "optional": false
+    },
+    "createcasing:auto_clutch_configure": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createoreexcavation:atlas_click": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createoreexcavation:veins_info": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createpropulsion:sync_solid_thruster_fuels": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createpropulsion:sync_thruster_fuels": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_contraption_controller_graph": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:advanced_controller_graph_action_result": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_controller_graph_history": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_controller_mouse_input": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:advanced_controller_profiler": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:advanced_controller_runtime": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_controller_shared_graphs": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_hud_image_catalog": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_hud_image_data": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:advanced_hud_image_request": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:advanced_hud_image_upload": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:aileron_bearing_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_contraption_controller_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_contraption_controller_discovery_node": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_contraption_controller_discovery_request": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_contraption_controller_discovery_results": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:analogue_contraption_controller_ghost_slots": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_contraption_controller_key": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_controller_custom_key": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_joystick_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_joystick_drag": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:analogue_joystick_ghost_slots": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:armor_stand_pose_open": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:armor_stand_pose_preference": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:armor_stand_pose_sync": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:bi_directional_gearshift_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:claw_ghost_slots": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:contraption_network_linker_sync": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:controller_runtime_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:double_button_appearance": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:double_button_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:double_button_hold": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:entity_launcher_anchor_control": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:entity_launcher_input": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:entity_launcher_power_mode": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:feature_toggle_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:gizmos_link_highlights": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:gyroscope_link_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:lectern_portable_contraption_controller_key": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:lectern_portable_contraption_controller_mode": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:navigation_table_action": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:physics_goggles_data": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:physics_goggles_data_request": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:portable_contraption_controller_key": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:portable_contraption_controller_mode": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:portable_contraption_controller_open": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:rope_knot_attach": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:shipping_manifest_open": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "createthrusters:shipping_manifest_refresh": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:thruster_bearing_range": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:thruster_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:thruster_fuel_tank": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:thruster_slot": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:vector_bearing_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:zipline_attach": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:zipline_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:zipline_follow_chain": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:zipline_input": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "createthrusters:zipline_mount": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "curios:break": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:client_page": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "curios:destroy": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "curios:grabbed_item": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:open_curios": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "curios:open_vanilla": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "curios:quick_move": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:server_page": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:set_icons": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:sync_active": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:sync_curios": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:sync_data": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:sync_modifiers": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:sync_render": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:sync_stack": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "curios:toggle_cosmetics": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "curios:toggle_render": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "domum_ornamentum:creative_set_archicutter_slot": {
+      "version": "1.0.234-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "drivebywire:bind_lectern_controller_hub": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "drivebywire:wire_add_connection": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "drivebywire:wire_network_full_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "drivebywire:wire_network_request_sync": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "drivebywire:wire_remove_connection": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "easyanvils:play/0": {
+      "version": "easyanvils.play",
+      "flow": null,
+      "optional": false
+    },
+    "easyanvils:play/1": {
+      "version": "easyanvils.play",
+      "flow": null,
+      "optional": false
+    },
+    "easyanvils:play/2": {
+      "version": "easyanvils.play",
+      "flow": null,
+      "optional": false
+    },
+    "easyanvils:play/3": {
+      "version": "easyanvils.play",
+      "flow": null,
+      "optional": false
+    },
+    "farmersdelight:flip_skillet": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "farmersdelight:rich_soil_boost_particles": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "flightlib:key_pressed": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "flightlib:keys_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "friendsandfoes:networking/v1/friendsandfoes/entity_animations_sync_packet": {
+      "version": "v1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "friendsandfoes:networking/v1/friendsandfoes/moobloom_variants_sync_packet": {
+      "version": "v1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "friendsandfoes:networking/v1/friendsandfoes/totem_effect_packet": {
+      "version": "v1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "guideme:open_guide": {
+      "version": "1.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "immersive_aircraft:aircraft_data": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:collision": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:command": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:engine_power": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:fire": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:fire_response": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:inventory": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:inventory_update": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:open_gui": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_aircraft:vehicle_upgrades": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_armors:armor_command": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "immersive_armors:settings": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "jade:server_ping_v1": {
+      "version": "5",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "kubejs:sync_server_data": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "kubejs:sync_stages": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "minecolonies:add_minimum_stock_to_building_module": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:add_remove_recipe": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:adjust_skill_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:alter_restaurant_menu_module": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:assign_field": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:assign_filterable_entity": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:assign_filterable_item_message": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:assign_unassign": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:assignment_mode": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:assistanthammerrequest": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:block_particle_effect": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:build_pick_up": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:build_request": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:builder_select_work_order": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:building_hiring_mode": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:building_set_style": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:change_delivery_priority": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:change_free_to_interact_block": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:change_recipe_priority": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:circle_particle_effect": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:click_gui_button_trigger": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_abandon_own": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_animal_view_data": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_delete_own": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_flag_change": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_list": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": null,
+      "optional": false
+    },
+    "minecolonies:colony_name_style": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_structure_style": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_texture_style": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:colony_view": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_building_extensions_update": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_building_view": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_citizen_view": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_remove": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_remove_building": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_remove_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_remove_workorder": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_research_manager_view": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_view_workorder": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:colony_visitor_view_data": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:compost_particle": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:courier_hiring_mode": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:create_colony": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:custom_recipe_manager": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:debug_aihistory": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:debug_enable": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:debug_output": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:debug_togglepathfinding": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:decoration_build_request": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:direct_place": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:enchanter_worker_set": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:farm_field_plot_resize": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:farm_field_update_seed": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:force_pickup": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:get_colony_info": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:give_tool": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:global_disease_sync": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:global_quest_sync": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:global_research_tree": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:guard_set_mine_pos": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:hire_fire": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:hire_mercenary": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:hire_spies": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:hut_rename": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:interaction_close": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:interaction_response": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:item_particle_effect": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:item_setting": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:localized_particle_effect": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:mark_building_dirty": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:mark_story_read": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:miner_repair_level": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:miner_set_level": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:open_building_ui": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_cant_found_colony_warning": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_colony_founding_covenant": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_crafting_gui": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:open_deco_build_window": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_delete_abandon_colony": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_gui_window_trigger": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:open_inventory": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:open_plantation_field_build_window": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_reactivate_colony": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:open_suggestion_window": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:pause_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_add_player": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_add_player_or_fake_player": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_add_rank": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_change_player_rank": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_edit_rank_type": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_permission": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_remove_player": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_remove_rank": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:permission_view": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:pickup_block": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:plantation_field_build_request": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:play_audio": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:play_music_at_pos": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:play_sound_for_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:post_box_request": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:quarry_hiring_mode": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:reactivate_building": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:recall_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:recall_citizen_hut": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:recall_single_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:remove_from_rallying_list": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:remove_minimum_stock_from_building_module": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:reset_filterable_item": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:resource_scroll_save_warehouse_snapshot": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:restart_citizen": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:save_structure_nbt": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:sleeping_particle": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:sort_building_message": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:stop_music": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:stream_particle_effect": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:switch_building_with_tool": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:switch_recipe_crafting": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:sync_path": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:sync_path_reached": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:team_colony_color_change": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:teleport_to_colony": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:toggle_banner_rally_guards": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:toggle_recipe": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:town_hall_rename": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:transfer_items_request": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:transfer_items_to_citizen_request": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:transfer_recipe_crafting_teaching": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:trigger_connection": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:trigger_setting": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:try_research_message": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:update_client_with_compatibility": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:update_request_state": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:upgrade_warehouse": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "minecolonies:vanilla_particle_message": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "minecolonies:work_order_change": {
+      "version": "1.1.1374-1.21.1-snapshot",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "moonlight:bidi_sync_configs": {
+      "version": "10",
+      "flow": null,
+      "optional": false
+    },
+    "moonlight:c2s_item_left_click": {
+      "version": "10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "moonlight:s2c_finalize_fluids": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_on_piston_moved_block": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_open_config_screen": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_open_screen": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_particle": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_send_login": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_sync_world_data": {
+      "version": "10",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "moonlight:s2c_update_box_block": {
+      "version": "10",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "multipiston:change_msg": {
+      "version": "1.2.58-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "offroad:borehead_sync_blocks": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "owo:local_packet": {
+      "version": "1.0.0",
+      "flow": null,
+      "optional": false
+    },
+    "owo:sync_screen_handler_properties": {
+      "version": "1.0.0",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "peripheralworks:configurator_target_action": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "peripheralworks:network_manager_group": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "peripheralworks:peripheralworks_generic_event": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "peripheralworks:target_render_style": {
+      "version": "1.0",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "ponder:clientbound_config": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ponder:clientbound_simple_action": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "ponder:serverbound_config": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "railways:s2c": {
+      "version": "1.0.0",
+      "flow": "Clientbound",
+      "optional": true
+    },
+    "rechiseled:main": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "ritchiesprojectilelib:neo_forge_packet": {
+      "version": "3.0.0",
+      "flow": null,
+      "optional": false
+    },
+    "sable:change_bounds_sublevel": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:change_sub_level_name": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:enter_gizmo_mode": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:finalize_sub_level": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:floating_material": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:freeze_player": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:gizmo_move_sub_level": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "sable:physics_property": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:punch_sub_level": {
+      "version": "1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "sable:recently_split_sub_level": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:snapshot_info_packet": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:snapshot_packet": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:start_tracking_sub_level": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:stop_moving_sub_level": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:stop_tracking_sub_level": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sable:udp_activation": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "seamlesssleep:server_config_sync": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "seamlesssleep:sleep_animation_start": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "seamlesssleep:sleep_animation_stop": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:assemble": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:assembler_failed": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:be_observed": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:break_rope": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:configure_altitude_sensor": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:configure_modulating_linked_reciever": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:diagram_data": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:end_sea": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:entry_modify": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:flick_assembler_lever": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:honey_glue_change_bounds": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:honey_glue_spawn": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:honey_glue_sync": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:key_interaction": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:linked_typewriter_bind_item": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:linked_typewriter_save": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:nameplate_change_name": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:open_diagram": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:physics_staff_action": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:physics_staff_beam": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:physics_staff_drag": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:physics_staff_drag_sessions": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:physics_staff_locks": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:place_merging_glue": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:place_spring": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:players_holding_handles": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:plunger_launcher_shoot": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:request_diagram_data": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:ride_rope": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:rope_data": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:rope_stopped": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:save_diagram": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:steering_wheel_update": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:throttle_lever_signal": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:typewriter_disconnect_user": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "simulated:update_client_lodestone": {
+      "version": "0.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "simulated:update_player_handle": {
+      "version": "0.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "sophisticatedcore:mounted_storage_contents": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:mounted_storage_update": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:play_disc": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:stop_disc_playback": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_additional_slot_info": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_block_highlights": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_container_client_data": {
+      "version": "1.4.85",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_container_stacks": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_datapack_settings_template": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_empty_slot_icons": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_player_settings": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_recent_crafted_results": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_slot_change_error": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_slot_stack": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:sync_template_settings": {
+      "version": "1.4.85",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "sophisticatedcore:tank_click": {
+      "version": "1.4.85",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "sophisticatedcore:transfer_full_slot": {
+      "version": "1.4.85",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "sophisticatedcore:transfer_items": {
+      "version": "1.4.85",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "spectrelib:sync": {
+      "version": "spectrelib",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurify:network/v1/config_status_to_client_packet": {
+      "version": "v1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurify:network/v1/config_sync_request_to_client_packet": {
+      "version": "v1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurify:network/v1/config_sync_to_client_packet": {
+      "version": "v1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurify:network/v1/config_sync_to_server_packet": {
+      "version": "v1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:absorb_block": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:add_remove_tag": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:blueprint_request": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:blueprint_sync": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:buildtool_placement": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:fill_top_placeholder": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:item_middle_mouse": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:notify_client_about_structure_packs": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:notify_server_about_structure_packs": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:operation_history": {
+      "version": "1.0.832-1.21.1",
+      "flow": null,
+      "optional": false
+    },
+    "structurize:remove_block": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:remove_entity": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:replace_block": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:save_scan": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:scan_on_server": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:scantool_teleport": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:set_tag_in_tool": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:show_scan": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:sync_preview_cache_to_client": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:sync_preview_cache_to_server": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:sync_settings_to_server": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:transfer_structure_pack_to_client": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:undo_redo": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "structurize:update_client_render": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "structurize:update_scan_tool": {
+      "version": "1.0.832-1.21.1",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "trashcans:main": {
+      "version": "1",
+      "flow": null,
+      "optional": false
+    },
+    "turtlechargingstation:energy_sync": {
+      "version": "turtlechargingstation",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "turtlechargingstation:id_sync_payload": {
+      "version": "turtlechargingstation",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "turtlechargingstation:turtle_fuel_sync": {
+      "version": "turtlechargingstation",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:clientbound_set_preferences": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:edit_waystone": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:edit_waystone_group": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:entity_position_sync": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:epitaph_activation": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:inventory_button": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:known_waystones": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:personal_waystone_settings": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:player_waystone_cooldowns": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:remove_waystone": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:remove_waystone_group": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:request_edit_waystone": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:request_manage_waystone_modifiers": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:select_waystone": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:serverbound_set_preferences": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:sort_waystone": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:sort_waystone_group": {
+      "version": "3",
+      "flow": "Serverbound",
+      "optional": false
+    },
+    "waystones:sorting_index": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:sync_config": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:teleport_effect": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:update_waystone": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:warp_plate_eject_effect": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:waystone_groups": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystones:waystone_removed": {
+      "version": "3",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystonessable:sable_teleport": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    },
+    "waystonessable:sublevel_guard": {
+      "version": "1",
+      "flow": "Clientbound",
+      "optional": false
+    }
+  },
+  "verified": true,
+  "server_version": "",
+  "configuration_complete": true,
+  "adhoc": [
+    "spell_engine:config",
+    "spell_engine:config_sync",
+    "spell_engine:ack",
+    "spell_engine:spell_registry",
+    "spell_engine:spell_registry_sync"
+  ]
+}

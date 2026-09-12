@@ -1,0 +1,6 @@
+# azalea 0.10.3 (the only release for Minecraft 1.21.1) uses nightly-only features
+# (error_generic_member_access, specialization). The SpacetimeDB 2.10 SDK needs a 2026 toolchain.
+# No single nightly satisfies both, so we build on current stable with the bootstrap switch,
+# which merely permits #![feature] — the features themselves still exist on stable rustc.
+[env]
+RUSTC_BOOTSTRAP = "1"

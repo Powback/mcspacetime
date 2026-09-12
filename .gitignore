@@ -1,0 +1,28 @@
+# Build output. 6.4 GB in client/, and the module has its own -- a plain `/client/target/` rule misses
+# `module/spacetimedb/target/`, which is where the wasm build lands and is another 300 MB.
+target/
+
+# CREDENTIAL. azalea-auth's device-code result for the live Microsoft account: an access token and a
+# refresh token for a real person's Minecraft login. Never commit this.
+/data/ms-auth.json
+
+# The dev replica's server directory: mod jars, world, logs -- ~890 MB, and rsync-copied from the live
+# pack rather than authored here. devserver/docker-compose.yaml and the KubeJS scripts under
+# devserver/data/kubejs/server_scripts/ ARE tracked (see !-rules below) because they are ours.
+/devserver/data/
+!/devserver/data/kubejs/server_scripts/
+
+# Downloaded worlds. These are BACKUPS of someone's live server, not source, and they grow without
+# bound as the bot walks. Keyed per server since 2026-09-12 (see scope.rs).
+/data/worlds/
+
+# Raw mod payload captures from MCST_DUMP_PAYLOAD. Debugging spoil, sometimes large.
+/data/payload-dump/
+
+# The block-state dump: 26 MB of generated JSON, regenerated from the SAME mod jars by
+# tools/kubejs_dump_registries.js (see CLAUDE.md, "The block-state table"). Excluded because it is a
+# build artifact tied to one jar set, not source -- but the client WILL NOT START without it, so
+# regenerate it before a fresh checkout can run. data/collision.json is kept: it is 29 KB.
+/data/blockstates.json
+
+.DS_Store

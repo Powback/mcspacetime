@@ -1,0 +1,64 @@
+# mcspacetime — live Minecraft world -> SpacetimeDB
+#
+#   spacetimedb : the database. Reached as http://mcspacetime.pow (Traefik, LAN) or
+#                 http://192.168.50.100:3200 (direct host port). Module name: "mcspacetime".
+#   bot         : the headless Minecraft protocol client (client/), publishing into the module.
+#                 Built from source; see README "Running the bot".
+#
+# Publish the module after the DB is up:
+#   spacetime server add --url http://localhost:3200 mcspacetime --no-fingerprint
+#   spacetime publish -s mcspacetime -p module mcspacetime
+services:
+  spacetimedb:
+    image: clockworklabs/spacetime:v2.10.0
+    container_name: mcspacetime-db
+    # The image runs as user "spacetime"; a fresh named volume is root-owned => "Permission denied"
+    # on first start. Running as root inside this internal-only container is the simplest fix.
+    user: "0:0"
+    command: ["start", "--listen-addr", "0.0.0.0:3000"]
+    ports:
+      - "3200:3000"
+    volumes:
+      - stdb-data:/home/spacetime/.local/share/spacetime/data   # data dir the official image logs at start
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mcspacetime.rule=Host(`mcspacetime.pow`)"
+      - "traefik.http.routers.mcspacetime.entrypoints=web"
+      - "traefik.http.services.mcspacetime.loadbalancer.server.port=3000"
+    networks:
+      - default
+      - traefik
+
+  bot:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    container_name: mcspacetime-bot
+    depends_on:
+      - spacetimedb
+    environment:
+      # The Minecraft server. Live server: host.docker.internal / the LAN address of the box.
+      MC_ADDR: "${MC_ADDR:-192.168.50.100:25565}"
+      MC_USERNAME: "${MC_USERNAME:-spacetime}"
+      # "offline" or "microsoft" (device-code login, token cached in /data/ms-auth.json)
+      MC_AUTH: "${MC_AUTH:-offline}"
+      MC_MS_EMAIL: "${MC_MS_EMAIL:-}"
+      STDB_URI: "http://spacetimedb:3000"
+      STDB_MODULE: "mcspacetime"
+      # Block-state table dumped from the (replica) server by devserver/kubejs dump script
+      BLOCKSTATES_JSON: "/app/data/blockstates.json"
+      RUST_LOG: "${RUST_LOG:-info}"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    networks:
+      - default
+
+volumes:
+  stdb-data: {}
+
+networks:
+  default: {}
+  traefik:
+    external: true

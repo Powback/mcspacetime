@@ -1,0 +1,33 @@
+[package]
+name = "mcspacetime-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Minecraft 1.21.1 (protocol 767): framing, compression, encryption, handshake/login packets.
+azalea-protocol = "=0.10.3"
+azalea-buf = "=0.10.3"
+azalea-auth = "=0.10.3"
+azalea-crypto = "=0.10.3"
+simdnbt = "=0.6.1"
+# zlib for the Anvil world download (scheme 2). Already in the tree via azalea-protocol.
+flate2 = "1"
+uuid = { version = "1", features = ["v3"] }
+md-5 = "0.10"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+spacetimedb-sdk = "2.10.0"
+
+[profile.release]
+debug = 1
+
+[patch.crates-io]
+# simdnbt 0.6.1 (azalea 0.10.3's NBT crate) used `slice::array_chunks`, a nightly API that was
+# removed in 2025. vendor/simdnbt is 0.6.1 with those two call sites rewritten (see its README).
+simdnbt = { path = "vendor/simdnbt" }
+# azalea-chat 0.10.3 used serde::__private::ser::FlatMapSerializer, removed in newer serde.
+azalea-chat = { path = "vendor/azalea-chat" }

@@ -1,0 +1,4 @@
+{
+  "server": "mcspacetime",
+  "module-path": "./spacetimedb"
+}

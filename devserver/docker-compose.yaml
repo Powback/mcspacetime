@@ -1,0 +1,44 @@
+# DEV REPLICA of the live Create CC:T 1.21.1 server, used ONLY to develop and test the
+# mcspacetime bot's NeoForge handshake and to dump the block-state table.
+#
+#   data/{mods,config,libraries,kubejs,defaultconfigs,world} were rsync-copied from
+#   ../../minecraft-create121/data (same NeoForge 21.1.248, same mod jars => same
+#   registry order => same block-state ids as the live server).
+#
+# Differences from the live server, on purpose:
+#   * ONLINE_MODE=FALSE  -> an offline bot can log in (the live server is online-mode=true)
+#   * port 25566, 3G heap, view-distance 6, low cpu_shares so it never starves the live one
+#   * NO Traefik labels, NO rcon exposed beyond the compose network
+services:
+  mcdev:
+    image: itzg/minecraft-server:java21
+    container_name: mcspacetime-devserver
+    cpu_shares: 512
+    tty: true
+    stdin_open: true
+    ports:
+      - "25566:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      NEOFORGE_VERSION: "21.1.248"
+      MEMORY: "3G"
+      USE_AIKAR_FLAGS: "TRUE"
+      ONLINE_MODE: "FALSE"
+      ALLOW_FLIGHT: "TRUE"
+      VIEW_DISTANCE: "6"
+      SIMULATION_DISTANCE: "4"
+      MAX_TICK_TIME: "-1"
+      MOTD: "mcspacetime dev replica"
+      TZ: "Europe/Oslo"
+      OVERRIDE_SERVER_PROPERTIES: "TRUE"
+      ENABLE_RCON: "TRUE"
+      RCON_PASSWORD: "mcspacetime-dev"
+      LEVEL: "world"
+      SEED: "7"
+      ENFORCE_SECURE_PROFILE: "FALSE"
+      SPAWN_PROTECTION: "0"
+    volumes:
+      - ./data:/data
+    restart: "no"
+    stop_grace_period: 60s
